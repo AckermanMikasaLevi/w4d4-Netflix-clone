@@ -1,0 +1,46 @@
+body {
+    background-color: #141414;
+}
+
+.navbar {
+    background-color: #111;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+#trending-now img,
+#watch-it-again img,
+#new-releases img {
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+#trending-now img:hover,
+#watch-it-again img:hover,
+#new-releases img:hover {
+    transform: scale(1.1);
+}
+
+#content-area {
+    padding-top: 10px; 
+    padding-left: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+footer .container {
+    text-align: left;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer li {
+    margin-bottom: 0.5rem;
+}

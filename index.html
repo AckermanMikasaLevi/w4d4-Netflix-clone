@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix Clone</title>
+</head>
+
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="Netflix_Logo_RGB.png" alt="Netflix Logo" style="height: 40px;">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">TV Shows</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Recently Added</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
+            </ul>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="search.png" alt="Search" style="height: 20px;">
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="profile.png" alt="Profile" style="height: 30px; width: 30px; border-radius: 50%;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="caret">&#9662;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-3">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <h1 class="h4 mr-3">TV Shows</h1>
+                <button class="btn btn-outline-secondary btn-sm d-flex align-items-center">
+                    Genres <span class="ml-1">&#9662;</span>
+                </button>
+            </div>
+            <div class="d-flex">
+                <button class="btn btn-outline-secondary mr-2"><img src="list.png" alt="List Icon" style="height: 20px;"></button>
+                <button class="btn btn-outline-secondary"><img src="grid.png" alt="Grid Icon" style="height: 20px;"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4" id="content-area"></div>
+        <h2 class="text-start" >Trending Now</h2>
+        <div class="row justify-content-start" id="trending-now">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/1.png" class="img-fluid" alt="Unorthodox">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/2.png" class="img-fluid" alt="After life">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/3.png" class="img-fluid" alt="VIS a vis il prezzo del riscato">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/4.png" class="img-fluid" alt="The place">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/5.png" class="img-fluid" alt="Summertime">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/6.png" class="img-fluid" alt="I delitti di Valhalla">
+            </div>
+        </div>
+
+        <h2 class="text-start" class="mt-4">Watch It Again</h2>
+        <div class="row justify-content-start" id="watch-it-again">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/7.png" class="img-fluid" alt="L'altra Grace">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/8.png" class="img-fluid" alt="Virgin river">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/9.png" class="img-fluid" alt="The english game">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/10.png" class="img-fluid" alt="Il metodo Kominsky">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/11.png" class="img-fluid" alt="Patto d'amore">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/12.png" class="img-fluid" alt="La casa de Las Flores">
+            </div>
+        </div>
+
+        <h2 class="text-start" class="mt-4">New Releases</h2>
+        <div class="row justify-content-start" id="new-releases">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/13.png" class="img-fluid" alt="Collateral beauty">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/14.png" class="img-fluid" alt="Self-made la vita di Madam C.J. Walkes">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/15.png" class="img-fluid" alt="Freud">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/16.png" class="img-fluid" alt="Grace and Frankie">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/17.png" class="img-fluid" alt="Lasciati andare">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+                <img src="images/18.png" class="img-fluid" alt="Dogman">
+            </div>
+        </div>
+    </div>
+
+<div class="footer-container d-flex justify-content-center mt-5">
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-start mb-3">
+                <img src="Logo1.png" alt="Logo facebook" class="mr-2" style="height: 30px;">
+                <img src="Logo2.png" alt="Logo Instagram" class="mr-2" style="height: 30px;">
+                <img src="Logo3.png" alt="Logo Twitter" class="mr-2" style="height: 30px;">
+                <img src="Logo4.png" alt="Logo Youtube" class="mr-2" style="height: 30px;">
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <ul class="list-unstyled">
+                        <li>Audio and Subtitles</li>
+                        <li>Media Center</li>
+                        <li>Privacy</li>
+                        <li>Contact Us</li>
+                    </ul>
+                    <button class="btn btn-outline-secondary btn-sm mt-2">Service Code</button>
+                </div>
+                <div class="col-12 col-md-3">
+                    <ul class="list-unstyled">
+                        <li>Audio Description</li>
+                        <li>Investor Relations</li>
+                        <li>Legal Notices</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <ul class="list-unstyled">
+                        <li>Help Center</li>
+                        <li>Jobs</li>
+                        <li>Cookie Preferences</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <ul class="list-unstyled">
+                        <li>Gift Cards</li>
+                        <li>Terms of Use</li>
+                        <li>Corporate Information</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-muted mt-4">&copy; 2024 Netflix Clone</p>
+        </div>
+    </footer>
+</div>
+
+
+</body>
+</html>
